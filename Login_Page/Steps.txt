@@ -1,0 +1,36 @@
+CREATE LOGIN PAGE
+Install MySQL
+
+mysql:
+mysql>create database website;
+mysql>use website;
+mysql> create table users(
+-> First_Name varchar(50) not null,
+-> Last_Name varchar(50) not null,
+-> Sex varchar(10) not null,
+-> Email varchar(50) not null unique,
+-> Password varchar(50) not null);
+Query OK, 0 rows affected (0.03 sec)
+
+CMD> pip install django
+CMD> pip install mysql-connector-python
+
+Exit CMD
+
+E:\Python
+open >Visual Studio Code [Right click]
+
+OPEN CMD 
+> E:\Python>django-admin startproject website
+> E:\Python>cd website
+> E:\Python\website>django-admin startapp signup
+> E:\Python\website>django-admin startapp login
+
+Go to VSC > create folder template
+> E:\Python\website\template
+
+Setting.py >
+INSTALLAPP : 'signup','login',
+
+TEMPLATES = 'DIR':['template'],
+
